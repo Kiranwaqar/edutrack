@@ -1,23 +1,23 @@
-EduTrack Microservices – Cloud Computing Assignment (GKE Deployment)
+## EduTrack Microservices – Cloud Computing Assignment (GKE Deployment)
 
 This repository hosts the microservices developed for the EduTrack learning platform as part of the Cloud Computing (SE-315) assignment. The goal of the project is to design a cloud-native backend using microservices, containerization, and Kubernetes orchestration on Google Cloud Platform (GCP). The system demonstrates core cloud concepts such as scalability, service isolation, monitoring, secret management, and integration with managed databases.
 
-Features
+# Features
 
 The project is composed of three microservices that operate independently while communicating through REST APIs.
 
-Student Service
+- Student Service:
 Handles student registration, profile retrieval, and CRUD operations.
 
-Course Service
+- Course Service:
 Stores and manages course-related information including listings and course details.
 
-Enrollment Service
+- Enrollment Service:
 Allows a student to enroll in a course and ensures relational integrity between the two.
 
 Each service is containerized with Docker, pushed to Google Artifact Registry, deployed on GKE, and connected to a centralized Cloud SQL PostgreSQL database. All services are exposed using LoadBalancer Service type so they can be accessed externally for demo and testing.
 
-Project Structure
+# Project Structure
 
 The repository is organized to clearly separate backend logic from Kubernetes deployment configurations.
 
@@ -35,7 +35,7 @@ k8s/hpa/ – Horizontal Pod Autoscaler configuration to support autoscaling
 
 README.md – Documentation summarizing the project
 
-High-Level Workflow
+# High-Level Workflow
 
 This project demonstrates the full lifecycle of building and deploying microservices on the cloud:
 
